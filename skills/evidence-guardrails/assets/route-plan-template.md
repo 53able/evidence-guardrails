@@ -1,7 +1,7 @@
 # Evidence Guardrails Route Plan
 
-- Change ID:
-- Request summary:
+- Work ID: PRJ-* / CHG-*
+- Project brief or change request:
 - Risk classification: low / high / unknown
 
 ## Route

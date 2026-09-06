@@ -2,8 +2,8 @@
 
 ## Scope
 
-- Change ID:
-- Change:
+- Work ID: PRJ-* / CHG-*
+- Project brief or change request:
 - Impact class: low / high / unknown
 - Included:
 - Excluded:

@@ -4,12 +4,12 @@
 
 # evidence-guardrails
 
-A small collection of agent skills for exposing missing evidence before and after AI-driven software changes. Each skill uses the standard `SKILL.md` layout under `skills/`.
+A small collection of agent skills for exposing missing evidence during AI-driven greenfield development and changes to existing software. Each skill uses the standard `SKILL.md` layout under `skills/`.
 
 ## Included skills
 
-- `evidence-guardrails`: Classifies a change's impact and evidence gaps, then orders only the necessary downstream skills.
-- `map-observable-boundaries`: Records a change's external boundaries, state, side effects, failures, and owners.
+- `evidence-guardrails`: Classifies a new project or change by impact and evidence gaps, then orders only the necessary downstream skills.
+- `map-observable-boundaries`: Records a new design or change's external boundaries, state, side effects, failures, and owners.
 - `requirements-to-verification`: Separates and traces needs, requirements, design decisions, verification methods, and evidence.
 - `separate-verification-validation`: Separates conformance to specifications from fitness for user and operational objectives.
 
