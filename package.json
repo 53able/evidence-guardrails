@@ -1,0 +1,13 @@
+{
+  "name": "evidence-guardrails",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Evidence-first agent skills for boundaries, traceability, and verification versus validation.",
+  "scripts": {
+    "validate:skills": "node scripts/validate-skills.mjs",
+    "test:templates": "python3 skills/map-observable-boundaries/scripts/validate-boundary-ledger.py --template skills/map-observable-boundaries/assets/boundary-ledger-template.md && python3 skills/requirements-to-verification/scripts/validate-traceability.py --template skills/requirements-to-verification/assets/traceability-table-template.md && python3 skills/separate-verification-validation/scripts/validate-vv-evidence.py --template skills/separate-verification-validation/assets/vv-evidence-template.md && python3 skills/evidence-guardrails-router/scripts/validate-route-plan.py --template skills/evidence-guardrails-router/assets/route-plan-template.md",
+    "test:validators": "bash scripts/test-validators.sh",
+    "test": "npm run validate:skills && npm run test:templates && npm run test:validators"
+  }
+}
