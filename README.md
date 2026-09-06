@@ -11,8 +11,6 @@ AI駆動開発で、実装前後の根拠不足を検出するための小さな
 
 ## 利用
 
-公開Gitリポジトリを作成した後、実際の `<owner>` を置換してスキルを発見・導入できます。現時点では公開GitHub URLとリモート導入は未検証です。
-
 ```bash
 npx skills add 53able/evidence-guardrails --list
 npx skills add 53able/evidence-guardrails --skill map-observable-boundaries
@@ -36,7 +34,4 @@ npm test
 
 このプロジェクトは、SysMLの自動生成、完全な要件管理、または本番変更の自動承認を提供しません。テンプレートが埋まっていることは、利用目的への適合や安全性を保証しません。
 
-## 配布状態
-
-この作業ツリーはローカルの `npx skills add ./ --list` で3スキルの発見を確認済みです。GitHub公開ソースからの導入、各エージェントでの読込、実案件比較評価は未実施です。npm公開を目的にしていないため、`package.json` は `private: true` です。
 
