@@ -4,7 +4,7 @@ AI駆動開発で、実装前後の根拠不足を検出するための小さな
 
 ## 含まれるスキル
 
-- `evidence-guardrails-router`: 変更の影響と証拠不足を分類し、必要な下位スキルだけを順序付ける。
+- `evidence-guardrails`: 変更の影響と証拠不足を分類し、必要な下位スキルだけを順序付ける。
 - `map-observable-boundaries`: 変更の外部境界、状態、副作用、失敗、所有者を台帳化する。
 - `requirements-to-verification`: ニーズ、要求、設計判断、検証証拠を混同せず追跡する。
 - `separate-verification-validation`: 仕様への適合確認と、利用・運用目的への適合確認を分離する。

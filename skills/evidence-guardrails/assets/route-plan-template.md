@@ -14,7 +14,7 @@
 
 - 
 
-## Router result
+## Guardrail result
 
 - Status: continue / blocked
 - Reason:

@@ -8,7 +8,7 @@
 | 1 | map-observable-boundaries | high-risk external charge | CHG-001 | boundary ledger | BND unknown | planned |
 ## Unresolved information
 - idempotency behavior
-## Router result
+## Guardrail result
 - Status: blocked
 - Reason: BND evidence pending
 - Next confirmation: billing owner confirms idempotency contract

@@ -4,7 +4,7 @@ parser=argparse.ArgumentParser(); parser.add_argument('--template', action='stor
 p=pathlib.Path(args.plan)
 if not p.is_file(): print(f'ERROR: route plan not found: {p}', file=sys.stderr); sys.exit(2)
 t=p.read_text(encoding='utf-8')
-required=['# Evidence Guardrails Route Plan','## Route','Classification evidence','Stop condition','## Unresolved information','## Router result','Next confirmation']
+required=['# Evidence Guardrails Route Plan','## Route','Classification evidence','Stop condition','## Unresolved information','## Guardrail result','Next confirmation']
 missing=[x for x in required if x not in t]
 if missing: print('ERROR: route plan is missing: '+', '.join(missing), file=sys.stderr); sys.exit(1)
 if args.template: print('OK: route-plan template has route, evidence, stop, and handoff contracts.'); sys.exit(0)
@@ -16,6 +16,6 @@ for row in rows:
   print('ERROR: each route needs skill, classification evidence, expected output, stop condition, and status.', file=sys.stderr);sys.exit(1)
  if c[1]=='skipped' and 'low' not in c[2].lower():
   print('ERROR: skipped requires explicit low-risk, reversible classification evidence.', file=sys.stderr);sys.exit(1)
-if not re.search(r'(?m)^- Status:\s*(continue|blocked)\b',t): print('ERROR: router result needs continue or blocked status.',file=sys.stderr);sys.exit(1)
+if not re.search(r'(?m)^- Status:\s*(continue|blocked)\b',t): print('ERROR: guardrail result needs continue or blocked status.',file=sys.stderr);sys.exit(1)
 if re.search(r'(?m)^- Next confirmation:\s*$',t): print('ERROR: completed route plan needs a next confirmation or explicit none.',file=sys.stderr);sys.exit(1)
 print('OK: completed route plan has evidence-bearing routes, stop states, and a next confirmation.')

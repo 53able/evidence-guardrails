@@ -1,9 +1,9 @@
 ---
-name: evidence-guardrails-router
+name: evidence-guardrails
 description: "変更の影響と証拠不足を分類し、境界台帳、要求追跡、VerificationとValidation分離を最小限の順序で選ぶ。Use when: 複数のガードレールスキルを使う変更調査、設計レビュー、リリース前確認を開始する。Don’t use for: 単一スキルが明示された作業、実装の実行、出荷または公開の承認。"
 ---
 
-# Evidence Guardrails Router
+# Evidence Guardrails
 
 このスキルは実装、テスト実行、リリース判定を行わない。変更の根拠と影響範囲を短く分類し、必要な下位スキルだけを順序付ける。
 

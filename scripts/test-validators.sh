@@ -8,6 +8,6 @@ ok python3 skills/requirements-to-verification/scripts/validate-traceability.py 
 bad python3 skills/requirements-to-verification/scripts/validate-traceability.py tests/fixtures/traceability-invalid.md
 ok python3 skills/separate-verification-validation/scripts/validate-vv-evidence.py tests/fixtures/vv-valid.md
 bad python3 skills/separate-verification-validation/scripts/validate-vv-evidence.py tests/fixtures/vv-invalid.md
-ok python3 skills/evidence-guardrails-router/scripts/validate-route-plan.py tests/fixtures/router-valid.md
-bad python3 skills/evidence-guardrails-router/scripts/validate-route-plan.py tests/fixtures/router-invalid.md
+ok python3 skills/evidence-guardrails/scripts/validate-route-plan.py tests/fixtures/guardrails-valid.md
+bad python3 skills/evidence-guardrails/scripts/validate-route-plan.py tests/fixtures/guardrails-invalid.md
 echo 'VALIDATOR TESTS PASSED: valid evidence passed and safety-negative fixtures failed.'

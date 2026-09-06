@@ -5,7 +5,7 @@
 | 1 | skipped | no evidence |  |  |  | planned |
 ## Unresolved information
 -
-## Router result
+## Guardrail result
 - Status: continue
 - Reason: none
 - Next confirmation:
